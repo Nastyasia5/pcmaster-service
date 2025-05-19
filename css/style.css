@@ -448,6 +448,7 @@ img {
     align-items: flex-start;
     margin-bottom: 12px;
     padding-left: 0;
+    flex-shrink: 0;
   }
   .mobile-header-nav-link {
     font-size: 30px;
