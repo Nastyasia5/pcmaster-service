@@ -448,7 +448,6 @@ img {
     align-items: flex-start;
     margin-bottom: 12px;
     padding-left: 0;
-    flex-shrink: 0;
   }
   .mobile-header-nav-link {
     font-size: 30px;
@@ -1139,21 +1138,19 @@ textarea.order-form-input-text {
 
 @media (max-width: 1279px) {
   .mobile-header-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    justify-content: flex-start;
+    padding-bottom: 12px;
+     overflow-y: auto;
+  }
   .mobile-header-nav {
     flex-shrink: 0;
   }
   .mobile-header-address {
-    margin-top: 0px; 
+    margin-top: auto; 
     flex-shrink: 0;
-      padding-top: 0;
-
   }
 }
 @media (max-width: 767px) {
@@ -1215,13 +1212,3 @@ textarea.order-form-input-text {
   }
 }
 
-@media (max-width: 767px) {
-  .mobile-header-nav-list {
-    margin-bottom: 4px; /* раніше було 12px або більше */
-  }
-
-  .mobile-header-address {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-}
