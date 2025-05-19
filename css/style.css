@@ -446,7 +446,7 @@ img {
     flex-direction: column;
     gap: 24px;
     align-items: flex-start;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     padding-left: 0;
   }
   .mobile-header-nav-link {
@@ -465,7 +465,7 @@ img {
   .mobile-header-address-list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap:14px;
   }
   .mobile-header-address-link {
     display: flex;
@@ -522,14 +522,14 @@ img {
 }
 
 .hero-text h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
-.hero-text p {
-  font-size: 30px;
-  margin-bottom: 16px;
+.hero-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 
@@ -1138,18 +1138,21 @@ textarea.order-form-input-text {
 
 @media (max-width: 1279px) {
   .mobile-header-menu {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; 
-    justify-content: flex-start;
-    padding-bottom: 28px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
   .mobile-header-nav {
     flex-shrink: 0;
   }
   .mobile-header-address {
-    margin-top: auto; 
+    margin-top: 0px; 
     flex-shrink: 0;
+      padding-top: 0;
+
   }
 }
 @media (max-width: 767px) {
@@ -1173,3 +1176,41 @@ textarea.order-form-input-text {
     gap: 14px;
   }
 }
+@media (max-width: 1024px){
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 55px;
+  height: 55px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.scroll-to-top svg {
+  display: block;
+}
+}
+/* Видно тільки до 1024px */
+@media (max-width: 1024px) {
+  .scroll-to-top {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
