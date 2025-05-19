@@ -1215,3 +1215,13 @@ textarea.order-form-input-text {
   }
 }
 
+@media (max-width: 767px) {
+  .mobile-header-nav-list {
+    margin-bottom: 4px; /* раніше було 12px або більше */
+  }
+
+  .mobile-header-address {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
